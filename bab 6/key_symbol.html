@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Key Symbol</title>
+</head>
+<body>
+    <h1>Belajar Javascript</h1>
+    <script>
+        let user = {
+            name: "Gugun",
+            address: "Brebes",
+            id: "24"
+        };
+
+        let id = Symbol();
+        user[id] = "1998";
+
+        console.log(user.id); 
+        console.log(user[id]);
+    </script>
+</body>
+</html>

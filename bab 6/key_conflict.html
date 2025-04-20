@@ -3,13 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Console Log</title>
+    <title>Key Conflict</title>
 </head>
 <body>
     <h1>Belajar Javascript</h1>
     <script>
-        var angka1;
-        let angka2;
+        let user = {
+            name: "Gugun",
+            address: "Brebes",
+            id: "24"
+        };
+
+        user.id = "1998";
+
+        console.log(user.id);
     </script>
 </body>
 </html>
