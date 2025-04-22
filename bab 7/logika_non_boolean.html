@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Logika Non Boolean</title>
+</head>
+<body>
+    <h1>Belajar Javascript</h1>
+    <script>
+        let foo;
+
+        foo = "Duniailkom" || "JavaScript";
+        console.log(foo); 
+
+        foo = "Duniailkom" && "JavaScript";
+        console.log(foo); 
+
+        foo = true || "JavaScript";
+        console.log(foo); 
+
+        foo = false || "JavaScript";
+        console.log(foo); 
+
+        foo = "JavaScript" && false;
+        console.log(foo); 
+
+        foo = false && "JavaScript";
+        console.log(foo); 
+
+        foo = false || false && true || "JavaScript";
+        console.log(foo); 
+
+        foo = true || false && true || "JavaScript";
+        console.log(foo); 
+    </script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weakmap</title>
+</head>
+<body>
+    <h1>Belajar Javascript</h1>
+    <script>
+        let foo = new WeakMap();
+        let obj1 = {};
+        let obj2 = {1:"Hello"};
+
+        foo.set(obj1, 100);
+        foo.set(obj2, "Siska");
+
+        console.log(foo);
+
+        console.log(foo.get(obj1)); 
+        console.log(foo.get(obj2));
+
+        console.log(foo.has(obj1)); 
+        console.log(foo.size); 
+
+        foo.delete(obj2);
+        console.log(foo);
+    </script>
+</body>
+</html>
