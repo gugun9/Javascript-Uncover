@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spread Operator</title>
+</head>
+<body>
+    <h1>Belajar Javascript</h1>
+    <script>
+        let nilai1 = ["a", "b", "c", "d"];
+        console.log(nilai1);
+
+        let nilai2 = [1, 2, 3, 4];
+        console.log(nilai2);
+
+        let nilai3 = [...nilai1,"e", "f"];
+        console.log(nilai3);
+
+        let nilai4 = [0, ...nilai2, 5, 6];
+        console.log(nilai4);
+
+        let nilai5 = [...nilai2, ...nilai3];
+        console.log(nilai5);
+    </script>
+</body>
+</html>
