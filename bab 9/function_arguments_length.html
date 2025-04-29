@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Function Arguments Length</title>
+</head>
+<body>
+    <h1>Belajar Javascript</h1>
+    <script>
+        function angka(){
+            return arguments.length;
+        }
+
+        let a = angka(1, 9);
+        console.log(a);
+
+        let b = angka(4, 8, 3, 7);
+        console.log(b);
+
+        let c = angka(3, 9, 1, 4, 6, 9, 0);
+        console.log(c);
+    </script>
+</body>
+</html>

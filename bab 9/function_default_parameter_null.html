@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Function Default Parameter Null</title>
+</head>
+<body>
+    <h1>Belajar Javascript</h1>
+    <script>
+        function rata2(a = 10, b = 10, c, d){
+            let hasil = (a + b + c + d)/4;
+            return hasil;
+        }
+
+        let nilai3 = rata2(undefined, undefined, 5, 5);
+        console.log(nilai3);
+    </script>
+</body>
+</html>
