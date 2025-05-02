@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mengubah Property</title>
+</head>
+<body>
+    <h1>Belajar Javascript</h1>
+    <script>
+        let mahasiswa = {
+            nama: "Gugun Guntara",
+            prodi: "Teknik Informatika",
+            ipk = 3.67;
+            semester = 4
+        };
+
+        console.log( mahasiswa.nama ); 
+        mahasiswa.nama = "Joko";
+        console.log( mahasiswa.nama );
+
+        console.log( mahasiswa["ipk"] ); 
+        mahasiswa["ipk"]= 2.9;
+        console.log( mahasiswa["ipk"] );
+    </script>
+</body>
+</html>

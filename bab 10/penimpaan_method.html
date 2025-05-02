@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Penimpaan Method</title>
+</head>
+<body>
+    <h1>Belajar Javascript</h1>
+    <script>
+        let mobil = {
+            nama: "Toyota Avanza",
+            tipe: "MPV",
+            harga: 300000000,
+            warna: "merah",
+            pergi: (tempat) => `Pergi ke ${tempat}`
+        };
+
+        console.log( mobil.pergi("Medan") );
+
+        mobil.pergi = "Methodnya sudah tertimpa..";
+
+        console.log( mobil.pergi("Medan") );
+    </script>
+</body>
+</html>

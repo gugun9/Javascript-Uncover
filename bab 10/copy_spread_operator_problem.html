@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Copy Spread Operator Problem</title>
+</head>
+<body>
+    <h1>Belajar Javascript</h1>
+    <script>
+        let mahasiswa = {
+            nama: "Andi",
+            nilaiIpk: {
+                sem1: 3.25,
+                sem2: 2.91,
+                sem3: 1.99
+            }
+        };
+
+        let mahasiswaBaru = {...mahasiswa};
+
+        mahasiswaBaru.nilaiIpk.sem1 = 3.99;
+        console.log( mahasiswa.nilaiIpk.sem1 ); 
+        console.log( mahasiswaBaru.nilaiIpk.sem1 );
+    </script>
+</body>
+</html>

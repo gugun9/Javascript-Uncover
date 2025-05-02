@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For In2</title>
+</head>
+<body>
+    <h1>Belajar Javascript</h1>
+    <script>
+        let mobil = {
+            nama: "Toyota Avanza",
+            tipe: "MPV",
+            harga: 300000000,
+            warna: "merah"
+        };
+
+        for (let prop in mobil) {
+            console.log('Isi property '+ prop +' = '+ mobil[prop]);
+        }
+    </script>
+</body>
+</html>
