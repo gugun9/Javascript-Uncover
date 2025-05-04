@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inheritance Method Super</title>
+</head>
+<body>
+    <h1>Belajar Javascript</h1>
+    <script>
+        class Mobil{
+            infoMobil(){
+                return "dari class Mobil";
+            }
+        }
+        class Bus extends Mobil{
+            infoBus(){
+                return "Ini dari class Bus dan juga " + super.infoMobil();
+            }
+        }
+        
+        let busBobi = new Bus();
+        console.log( busBobi.infoBus() );
+    </script>
+</body>
+</html>

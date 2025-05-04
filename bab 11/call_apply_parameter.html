@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Call Apply Parameter</title>
+</head>
+<body>
+    <h1>Belajar Javascript</h1>
+    <script>
+        const tambah = function (a, b){
+            return this.num + a + b
+        };
+        
+        let obj = {
+            num: 10
+        };
+
+        console.log( tambah.call(obj,5,7) ); 
+        console.log( tambah.apply(obj,[5,7]) );
+    </script>
+</body>
+</html>

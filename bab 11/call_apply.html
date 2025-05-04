@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Call Apply</title>
+</head>
+<body>
+    <h1>Belajar Javascript</h1>
+    <script>
+        const cekJudul = function (){
+            return this.judul;
+        };
+        
+        let buku1 = {
+            judul: "JavaScript Uncover"
+        };
+        let buku2 = {
+            judul: "React Uncover"
+        };
+
+        console.log( cekJudul.call(buku1) ); 
+        console.log( cekJudul.apply(buku1) );
+
+        console.log( cekJudul.call(buku2) ); 
+        console.log( cekJudul.apply(buku2) );
+    </script>
+</body>
+</html>

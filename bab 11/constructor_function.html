@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Constructor Function</title>
+</head>
+<body>
+    <h1>Belajar Javascript</h1>
+    <script>
+        function Mobil (nama, tipe, harga){
+            this.nama = nama;
+            this.tipe = tipe;
+            this.harga = harga;
+        }
+
+        let mobilAndi = new Mobil("Daihatsu Xenia", "MPV", 220000000);
+        let mobilJoko = new Mobil("Toyota Camry", "Sedan", 750000000);
+
+        console.log( mobilAndi.nama ); 
+        console.log( mobilJoko.nama);
+
+        console.log( mobilAndi instanceof Mobil); 
+        console.log( mobilJoko instanceof Mobil);
+    </script>
+</body>
+</html>

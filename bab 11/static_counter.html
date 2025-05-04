@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Static Counter</title>
+</head>
+<body>
+    <h1>Belajar Javascript</h1>
+    <script>
+        class Mobil{
+            static jumlahMobil = 0;
+            constructor(){
+                Mobil.jumlahMobil++;
+            }
+        }
+
+        let mobilAnto = new Mobil();
+        let mobilRidho = new Mobil();
+        let mobilRiri = new Mobil();
+        
+        console.log("Total mobil: " + Mobil.jumlahMobil );
+    </script>
+</body>
+</html>

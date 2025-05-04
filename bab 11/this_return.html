@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>This Return</title>
+</head>
+<body>
+    <h1>Belajar Javascript</h1>
+    <script>
+        let mobilRudi = {
+            nama: "Mitsubishi Expander",
+            foo () { return this },
+            bar: () => this
+        };
+
+        console.log( mobilRudi.foo() ); 
+        console.log( mobilRudi.bar() );
+    </script>
+</body>
+</html>
