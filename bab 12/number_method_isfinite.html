@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number Method Isfinite</title>
+</head>
+<body>
+    <h1>Belajar Javascript</h1>
+    <script>
+        let foo;
+
+        foo = 6;
+        console.log( Number.isFinite(foo) );
+
+        foo = 3.21456;
+        console.log( Number.isFinite(foo) );
+
+        foo = 'a';
+        console.log( Number.isFinite(foo) );
+
+        foo = 1/0;
+        console.log( Number.isFinite(foo) );
+
+        foo = Number.NEGATIVE_INFINITY ;
+        console.log( Number.isFinite(foo) );
+
+        foo = Number.NaN;
+        console.log( Number.isFinite(foo) );
+    </script>
+</body>
+</html>
