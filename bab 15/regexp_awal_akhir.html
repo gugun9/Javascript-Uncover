@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Regexp Awal Akhir</title>
+</head>
+<body>
+    <h1>Belajar Javascript</h1>
+    <script>
+        let foo = "Belajar JavaScript";
+
+        console.log( /JavaScript/.test(foo) ); 
+        console.log( /^JavaScript/.test(foo) ); 
+        console.log( /JavaScript$/.test(foo) ); 
+        console.log( /^Belajar/.test(foo) ); 
+        console.log( /^Belajar JavaScript$/.test(foo) ); 
+        console.log( /Script$/.test(foo) ); 
+    </script>
+</body>
+</html>
