@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array Splice</title>
+</head>
+<body>
+    <h1>Belajar Javascript</h1>
+    <script>
+        let foo = ["a","b","c","d","e","f","g"];
+        foo.splice(4);
+        console.log(foo);
+
+        let bar = ["a","b","c","d","e","f","g"];
+        bar.splice(4,2);
+        console.log(bar);
+
+        let baz = ["a","b","c","d","e","f","g"];
+        baz.splice(4,2,"x","y","z");
+        console.log(baz);
+
+        baz.splice(4,0,"1");
+        console.log(baz);
+    </script>
+</body>
+</html>
