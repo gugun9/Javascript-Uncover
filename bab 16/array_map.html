@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array Map</title>
+</head>
+<body>
+    <h1>Belajar Javascript</h1>
+    <script>
+        let foo = [8,4,7,9,3,2];
+
+        let bar = foo.map(
+            function (element, index, array){
+                return element * 2;
+            } 
+        );  
+
+        console.log(bar);
+    </script>
+</body>
+</html>
