@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array Reduce Reduceright Pangkat</title>
+</head>
+<body>
+    <h1>Belajar Javascript</h1>
+    <script>
+        const pangkat2 = (total,angka) => total + Math.pow(angka,2);
+
+        let foo = [5,7,14];
+        console.log(foo.reduce(pangkat2));
+        console.log(foo.reduce(pangkat2,0));
+
+        console.log(foo.reduceRight(pangkat2)); 
+        console.log(foo.reduceRight(pangkat2,0)); 
+    </script>
+</body>
+</html>
