@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selisih Tanggal Detail</title>
+</head>
+<body>
+    <h1>Belajar javascript</h1>
+    <script>
+        let tanggalAwal = new Date("06/05/2022");
+        let tanggalAkhir = new Date("12/20/2022");
+
+        let timeAwal = tanggalAwal.getTime();
+        let timeAkhir = tanggalAkhir.getTime();
+
+        console.log( timeAwal ); 
+        console.log( timeAkhir );
+
+        let selisihTanggal = timeAkhir - timeAwal;
+        console.log( selisihTanggal ); 
+    </script>
+</body>
+</html>
