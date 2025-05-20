@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Throw Error</title>
+</head>
+<body>
+    <h1>Belajar Javascript</h1>
+    <script>
+        const foo = 101;
+        try{
+            if (foo > 100){
+                throw "Angka foo terlalu besar";
+            }
+        }
+        catch(e){
+            console.log(e.name); 
+            console.log(e.message); 
+            console.log(e);
+        }
+    </script>
+</body>
+</html>
