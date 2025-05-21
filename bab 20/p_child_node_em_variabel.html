@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>P Child Node Em Variabel</title>
+</head>
+<body>
+    <h1>Belajar Javascript</h1>
+    <script>
+        let foo = document.childNodes[1].childNodes[2].childNodes[3];
+        let bar = foo.lastChild;
+
+        console.log(bar.nodeName); 
+        console.log(bar.nodeType); 
+        console.log(bar.childNodes); 
+        console.log(bar.childNodes.length);
+    </script>
+</body>
+</html>
