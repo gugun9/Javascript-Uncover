@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Node Textcontent B</title>
+</head>
+<body>
+    <h1>Belajar Javascript</h1>
+    <p>Sedang Belajar<em>Javascript</em><b>di Dicoding</b></p>
+    <script>
+        let pNode = document.childNodes[1].childNodes[2].childNodes[3];
+        let bNode = pNode.lastChild;
+        console.log( bNode.textContent ); 
+        bNode.textContent = "JavaScript Uncover";
+    </script>
+</body>
+</html>

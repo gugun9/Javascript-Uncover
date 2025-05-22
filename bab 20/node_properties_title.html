@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Node Properties Title</title>
+</head>
+<body>
+    <h1>Belajar Javascript</h1>
+    <p>Sedang Belajar<em>Javascript</em><b>di Dicoding</b></p>
+    <script>
+        let pNode = document.childNodes[1].childNodes[2].childNodes[3];
+        let bodyNode = pNode.parentNode;
+        let headNode = bodyNode.previousSibling.previousSibling;
+        let titleNode = headNode.lastChild.previousSibling;
+
+        console.log( titleNode.childNodes );
+        console.log( titleNode.firstChild ); 
+        console.log( titleNode.lastChild ); 
+        console.log( titleNode.nextSibling );
+        console.log( titleNode.nodeName ); 
+        console.log( titleNode.nodeType ); 
+        console.log( titleNode.parentNode ); 
+        console.log( titleNode.previousSibling ); 
+        console.log( titleNode.textContent ); 
+    </script>
+</body>
+</html>

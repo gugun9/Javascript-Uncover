@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Insert Before P</title>
+</head>
+<body>
+    <h1>Belajar Javascript</h1>
+    <p>Sedang Belajar<em>Javascript</em><b>di Dicoding</b></p>
+    <script>
+        let bodyNode = document.childNodes[1].childNodes[2];
+        let pNode = document.childNodes[1].childNodes[2].childNodes[3];
+
+        let olNode = document.createElement("ol");
+
+        let liNode1 = document.createElement("li");
+        let liNode2 = document.createElement("li");
+        let liNode3 = document.createElement("li");
+
+        liNode1.appendChild(document.createTextNode("HTML"));
+        liNode2.appendChild(document.createTextNode("CSS"));
+        liNode3.appendChild(document.createTextNode("JavaScript"));
+
+        olNode.appendChild(liNode1);
+        olNode.appendChild(liNode2);
+        olNode.appendChild(liNode3);
+
+        bodyNode.insertBefore(olNode,pNode);
+    </script>
+</body>
+</html>

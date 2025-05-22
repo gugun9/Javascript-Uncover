@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latihan Table Random CSS</title>
+    <style>
+        table{
+            border-collapse: collapse;
+            border-spacing: 0;
+            border: 1px black solid;
+        }
+        td{
+            padding:8px 15px;
+            border:1px black solid;
+        }
+        tr:nth-child(2n){
+            background-color: #F2F2F2;
+        }
+    </style>
+</head>
+<body>
+    <h1>Belajar Javascript</h1>
+    <p>Sedang Belajar<em>Javascript</em><b>di Dicoding</b></p>
+    <script>
+        let bodyNode = document.childNodes[1].childNodes[2];
+        let pNode = bodyNode.childNodes[3];
+
+        let tableNode = document.createElement("table");
+
+        let i, trNode, tdNode1, tdNode2, textNo, randomNumber, textRandom;
+
+        for (i = 1; i <= 10; i++){
+            trNode = document.createElement("tr");
+            tdNode1 = document.createElement("td");
+            tdNode2 = document.createElement("td");
+
+            textNo = document.createTextNode(i+".");
+
+            randomNumber = Math.floor(Math.random() * (90)) + 10;
+            textRandom = document.createTextNode(randomNumber);
+
+            tdNode1.appendChild(textNo);
+            tdNode2.appendChild(textRandom);
+
+            trNode.appendChild(tdNode1);
+            trNode.appendChild(tdNode2);
+
+            tableNode.appendChild(trNode);
+        }
+
+       bodyNode.insertBefore(tableNode,pNode);
+    </script>
+</body>
+</html>
