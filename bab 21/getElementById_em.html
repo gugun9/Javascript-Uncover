@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Getelementbyid Em</title>
+</head>
+<body>
+    <h1 id="judul">Belajar Javascript</h1>
+    <p>Sedang Belajar<em id="emTag">Javascript</em><b>di Dicoding</b></p>
+    <script>
+        let emNode = document.getElementById("emTag");
+
+        console.log(emNode.nodeName); 
+        console.log(emNode.nodeType); 
+        console.log(emNode.childNodes); 
+        console.log(emNode.textContent); 
+
+        emNode.textContent = "Document Object";
+    </script>
+</body>
+</html>

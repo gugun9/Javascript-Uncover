@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Getelementbytagname Li</title>
+</head>
+<body>
+    <h1>Belajar Javascript</h1>
+    <p>Sedang Belajar<em>Javascript</em><b>di Dicoding</b></p>
+    <ol>
+        <li>Belajar HTML</li>
+        <li>Belajar CSS</li>
+        <li>Belajar Javascript</li>
+    </ol>
+    <ol>
+        <li>Belajar MySQL</li>
+        <li>Belajar Mongo DB</li>
+    </ol>
+    <script>
+        let liTagNode = document.getElementsByTagName("li");
+        console.log(liTagNode); 
+        console.log(liTagNode.length);
+
+        let liNode;
+        for (liNode of liTagNode){
+            console.log(liNode.textContent);
+        }
+    </script>
+</body>
+</html>

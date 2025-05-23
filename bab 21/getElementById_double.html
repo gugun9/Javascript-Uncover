@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Getelementbyid Double</title>
+</head>
+<body>
+    <h1 id="judul">Belajar Javascript</h1>
+    <p id="judul">Sedang Belajar<em>Javascript</em><b>di Dicoding</b></p>
+    <script>
+       let sebuahNode = document.getElementById("judul");
+
+        console.log(sebuahNode.nodeName); 
+        console.log(sebuahNode.nodeType); 
+        console.log(sebuahNode.childNodes); 
+        console.log(sebuahNode.textContent); 
+
+        sebuahNode.textContent = "Membuat 2 atribut id";
+    </script>
+</body>
+</html>

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Outerhtml Write</title>
+</head>
+<body>
+    <h1 id="judul">Belajar Javascript</h1>
+    <p>Sedang Belajar<em>Javascript</em><b>di Dicoding</b></p>
+    <script>
+        let judulNode = document.getElementById("judul");
+        judulNode.outerHTML = "<h2>Belajar Element Object<h2>";
+
+        let pNode = document.querySelector("p");
+        pNode.outerHTML = "<pre>Sedang belajar <i>Element Object</i></pre>";
+    </script>
+</body>
+</html>

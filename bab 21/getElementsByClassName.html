@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Getelementbyclassname</title>
+    <style>
+        .hijau{
+            color: green;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="hijau">Belajar Javascript</h1>
+    <p>Sedang Belajar<em>Javascript</em><b class="hijau">di Dicoding</b></p>
+    <script>
+        let classNode = document.getElementsByClassName("hijau");
+
+        console.log(classNode);
+
+        console.log(classNode[0].nodeName); 
+        console.log(classNode[0].nodeType); 
+        console.log(classNode[0].childNodes); 
+        console.log(classNode[0].textContent);
+
+        console.log(classNode[1].nodeName); 
+        console.log(classNode[1].nodeType); 
+        console.log(classNode[1].childNodes); 
+        console.log(classNode[1].textContent);
+    </script>
+</body>
+</html>

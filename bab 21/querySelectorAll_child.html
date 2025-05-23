@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Queryselectorall Child</title>
+</head>
+<body>
+    <h1>Belajar Javascript</h1>
+    <p>Sedang Belajar<em>Javascript</em><b>di Dicoding</b></p>
+    <ol>
+        <li>Belajar Java</li>
+        <li>Belajar PHP</li>
+        <li>Belajar HTML</li>
+        <li>Belajar CSS</li>
+        <li>Belajar PYTHON</li>
+    </ol>
+    <script>
+        let kumpulanNode = document.querySelectorAll("li:nth-child(even)");
+
+        console.log(kumpulanNode); 
+        console.log(kumpulanNode.length); 
+
+        let isiNode;
+        for (isiNode of kumpulanNode){
+            isiNode.textContent = "Belajar Document Object";
+        }
+    </script>
+</body>
+</html>
