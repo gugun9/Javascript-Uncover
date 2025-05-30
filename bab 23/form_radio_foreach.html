@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Radio Foreach</title>
+</head>
+<body>
+    <p>Belajar:
+        <input type="radio" name="belajar" id="belajarHTML" value="HTML"> 
+        <input type="radio" name="belajar" id="belajarCSS" value="CSS"> 
+        <input type="radio" name="belajar" id="belajarJS" value="JavaScript">
+        <input type="radio" name="belajar" id="belajarJS" value="PHP"> 
+        <input type="radio" name="belajar" id="belajarJS" value="MYSQL">  
+    </p>
+    <p><button id="periksa">Periksa</button></p>
+    <p>Hasil: <span id="hasil"></span></p>
+    <script>
+        let belajarNode = document.querySelectorAll("input");
+        let periksaNode = document.getElementById("periksa");
+        let hasilNode = document.getElementById("hasil");
+
+        const diPeriksa = () =>{
+            belajarNode.forEach((element)=>{
+                if (element.checked === true){
+                    hasilNode.innerHTML = element.value;
+                }
+            })
+        }
+
+        periksaNode.addEventListener("click", diPeriksa);
+    </script>
+</body>
+</html>
